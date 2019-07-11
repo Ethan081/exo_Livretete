@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr_FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Barriecito|Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/70ece4c924.js"></script>
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <div class="logoImage"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="resp"></div>
+                <h3 class="slogan">Connecting People, for Life</h3>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="sidebar">
+                    <ul>
+                        <li class="liSideBar"><a href="{{ path("homePage") }}" class="button">Home</a></li>
+                        <li class="liSideBar"><a href="{{ path("contact_page") }}" class="button">Contact</a></li>
+                        <li class="liSideBar"><a href="{{ path("list_page") }}" class="button">List</a></li>
+                        <li class="liSideBar boite"></li>
+                        {% for id,element in users %}
+                            <li class="liSideBar"><a href="{{ path('profile_page', {'id': id }) }}">{{ element.name  }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="content">
+                    {% block content%}
+                    {% endblock %}
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <div class="footerImage"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="resp"></div>
+                <div class="footerImage"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="resp"></div>
+            </div>
+        </footer>
+        
+
+    </body>
+</html>

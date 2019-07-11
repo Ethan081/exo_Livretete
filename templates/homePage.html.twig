@@ -1,0 +1,49 @@
+{% extends "base.html.twig" %}
+
+{% block content%}
+    <div class="users">
+        {% for element in firstProfiles %}
+        <div class="userCard">
+            <div class="cardImage">
+                <img src="{{ element.image }}" alt="" class="resp userCardImage">
+            </div>
+            <div class="userCardName">
+                <h2>{{ element.name }}</h2>
+            </div>
+            <div class="userCardReknown">
+                <h3>{{ element.reknown }}</h3>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="rubrique">
+        <h1>News</h1>
+    </div>
+    <article class="article">
+        <div class="newsCard">
+            <div class="newsCardImage">
+                <div class="newsImage"><img src="{{ asset('assets/images/gadnews.png') }}" alt="" class="resp"></div>
+            </div>
+            <div class="newsCardTitle">
+                <h4>Gad Elmaleh de nouveau accusé de plagiat et la fessée hors-la-loi.</h4>
+            </div>
+        </div>
+        <div class="newsCard">
+            <div class="newsCardImage">
+                <div class="newsImage"><img src="{{ asset('assets/images/mielnews.gif') }}" alt="" class="resp"></div>
+            </div>
+            <div class="newsCardTitle">
+                <h4>L'étiquette des pots devra bientôt mentionner la réelle origine du produit.</h4>
+            </div>
+        </div>
+        <div class="newsCard">
+            <div class="newsCardImage">
+                <div class="newsImage"><img src="{{ asset('assets/images/algue.jpg') }}" alt="" class="resp"></div>
+            </div>
+            <div class="newsCardTitle">
+                <h4>Algues vertes: Des associations réclament un protocole en cas de décès suspect.</h4>
+            </div>
+        </div>
+    </article>
+{% endblock %}

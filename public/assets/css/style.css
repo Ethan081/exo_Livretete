@@ -1,0 +1,212 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.resp{
+    width: 100%;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    color:#7D6B7D;
+}
+h2, h3{
+    margin: 0;
+}
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Barriecito', cursive;*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Header*/
+.header{
+    background-color: #FF8C64;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logoImage{
+    width: 100px;
+    height: 100px;
+}
+.slogan{
+    margin-top: 60px;
+    font-family: 'Barriecito', cursive;
+    color: #f1f1f1;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Main*/
+.container{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    background-color: #FF665A;
+}
+.content{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+.liSideBar{
+    margin: 10px;
+}
+.boite{
+    background-color: #FFF587;
+    widows: 20px;
+    height: 4px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #FFF587;
+}
+.article{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+
+}
+.rubrique{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/*------------------------------------------------------*/
+/*newsCard*/
+.newsCard{
+    width: 30%;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+    background-color: #A3A1A8;
+    color: #f1f1f1;
+
+}
+.newsCardImage{
+    width: 100%;
+}
+.newsCardTitle{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    padding: 10px;
+}
+/*------------------------------------------------------*/
+/*userCard*/
+.users{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.userCard{
+
+    width: 250px;
+    background-color: #FFF587;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.userCardImage{
+    position: relative;
+    top: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.4);
+
+}
+.userCardName,userCardReknown{
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contact*/
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: #A3A1A8;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.4);
+;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*List*/
+.listProfile{
+    width: 70%;
+}
+.userCardBio{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Profile*/
+.card{
+    width: 80%;
+    background-color: #C9C9C9;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.cardImageProfile{
+    width: 30%;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.cardtop{
+    display: flex;
+    width: 100%;
+
+}
+.cardBio{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Footer*/
+.social{
+    display: flex;
+    justify-content: space-between;
+    background-color: #7D6B7D;
+}
+.footerImage{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block content%}
+
+        <div class="card">
+            <div class="cardTop">
+                <div class="cardImageProfile">
+                    <img src="{{ user.image }}" alt="" class="resp ">
+                </div>
+                <div class="cardName">
+                    <h2>{{ user.name }}</h2>
+                    <h4>({{ user.shortname }})</h4>
+                </div>
+            </div>
+            <div class="cardReknown">
+                <h5>{{ user.reknown }}</h5>
+            </div>
+            <div class="cardBio">
+                <h6>{{ user.bio }}</h6>
+            </div>
+        </div>
+
+{% endblock %}
