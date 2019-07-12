@@ -25,8 +25,8 @@
                         <li class="liSideBar"><a href="{{ path("contact_page") }}" class="button">Contact</a></li>
                         <li class="liSideBar"><a href="{{ path("list_page") }}" class="button">List</a></li>
                         <li class="liSideBar boite"></li>
-                        {% for id,element in users %}
-                            <li class="liSideBar"><a href="{{ path('profile_page', {'id': id }) }}">{{ element.name  }}</a></li>
+                        {% for key,value in users %}
+                            <li class="liSideBar"><a href="{{ path('profile_page', {'id': key }) }}">{{ value.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="social">
                 <div class="footerImage"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="resp"></div>
                 <div class="footerImage"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="resp"></div>

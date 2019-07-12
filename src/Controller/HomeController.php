@@ -11,8 +11,8 @@ class HomeController extends AbstractController
     private $users = [
         0 =>[
             'image' => 'https://akns-images.eonline.com/eol_images/Entire_Site/201159/300.cohen.lc.060911.jpg?fit=inside|900:auto&output-quality=90',
-            'name' => 'Barot Bellingham',
-            'shortname' => 'Barot_Bellingham',
+            'name' => 'Borat Dicktathor',
+            'shortname' => 'The Dicktathor',
             'reknown' => 'Royal Academy of Painting and Sculpture',
             'bio' => 'Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot\'s collection entitled "The Un-Collection" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different',
         ],
