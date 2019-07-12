@@ -73,7 +73,7 @@ class HomeController extends AbstractController
             'bio' => 'A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art.',
         ]
     ];
-
+//--------------------------------------------------------------------------------------------------
     //je cree ma route home
     /**
      * @Route("/homePage", name="homePage")
@@ -89,6 +89,7 @@ class HomeController extends AbstractController
             ]
         );
     }
+    //--------------------------------------------------------------------------------------------------
     //je cree ma route contact
     /**
      * @Route("/contact",name="contact_page")
@@ -100,6 +101,7 @@ class HomeController extends AbstractController
             ]
         );
     }
+    //--------------------------------------------------------------------------------------------------
     //je cree ma route list
     /**
      * @Route("/list",name="list_page")
@@ -111,6 +113,7 @@ class HomeController extends AbstractController
             ]
         );
     }
+    //--------------------------------------------------------------------------------------------------
     //je cree ma route profile
     /**
      * @Route("/profile/{id}",name="profile_page")

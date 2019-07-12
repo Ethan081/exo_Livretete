@@ -23,6 +23,7 @@ h1{
 h2, h3{
     margin: 0;
 }
+/*Font Utilise*/
 /*font-family: 'Roboto', sans-serif;*/
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Barriecito', cursive;*/
@@ -78,7 +79,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #FFF587;
+    color: rgba(213,132,213, 0.8);
 }
 .article{
     display: flex;
@@ -90,7 +91,7 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-/*------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*newsCard*/
 .newsCard{
     width: 30%;
@@ -109,7 +110,7 @@ a:hover{
     color: #f1f1f1;
     padding: 10px;
 }
-/*------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*userCard*/
 .users{
     display: flex;
@@ -192,12 +193,6 @@ a:hover{
 .cardBio{
     font-family: 'Open Sans', sans-serif;
 }
-
-
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Footer*/
 .social{
