@@ -6,17 +6,18 @@
         <a href="{{ path('profile_page', {'id': id }) }}">
             <div class="userCard">
                 <div class="cardImage">
-                        <img src="{{ element.image }}" alt="" class="resp userCardImage">
+                    {# voir pour le lien avec l image ne marche pas #}
+                    <img src="{{ asset('assets/images/element.getImage()') }}" alt="" class="resp userCardImage">
                 </div>
                 <div class="userCardName">
-                    <h2>{{ element.name }}</h2>
-                    <h4>({{  element.shortname }})</h4>
+                    <h2>{{ element.getName()}}</h2>
+                    <h4>({{  element.getShortname() }})</h4>
                 </div>
                 <div class="userCardReknown">
-                    <h5>{{ element.reknown }}</h5>
+                    <h5>{{ element.getReknown() }}</h5>
                 </div>
                 <div class="userCardBio">
-                    <h6>{{ element.bio }}</h6>
+                    <h6>{{ element.getBio() }}</h6>
                 </div>
             </div>
         </a>
