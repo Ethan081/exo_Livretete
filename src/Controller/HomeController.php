@@ -68,7 +68,7 @@ class HomeController extends AbstractController
 
         $users = $usersRepository->findAll();
 
-        $user = $usersRepository->find($id+1);
+        $user = $usersRepository->find($id);
 
         return $this->render('profilePage.html.twig',
             [

@@ -2,8 +2,8 @@
 
 {% block content%}
     <div class="users">
-    {% for id,element in users %}
-        <a href="{{ path('profile_page', {'id': id }) }}">
+    {% for element in users %}
+        <a href="{{ path('profile_page', {'id':element.id}) }}">
             <div class="userCard">
                 <div class="cardImage">
                     <img src="{{ asset('assets/images/'~element.image) }}" alt="" class="resp userCardImage">
