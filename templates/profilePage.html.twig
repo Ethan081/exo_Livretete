@@ -5,19 +5,18 @@
         <div class="card">
             <div class="cardTop">
                 <div class="cardImageProfile">
-                    {# voir pour le lien avec l image ne marche pas #}
-                    <img src="../assets/images/borat.jpg" alt="" class="resp userCardImage">
+                    {# <img src={{ asset('assets/images/'~ image) }} alt="" class="resp userCardImage"> #}
                 </div>
                 <div class="cardName">
-                    <h2>{{ user.getName() }}</h2>
-                    <h4>({{ user.getShortname() }})</h4>
+                    <h2>{{ user.name }}</h2>
+                    <h4>({{ user.shortname }})</h4>
                 </div>
             </div>
             <div class="cardReknown">
-                <h5>{{ user.getReknown() }}</h5>
+                <h5>{{ user.reknown }}</h5>
             </div>
             <div class="cardBio">
-                <h6>{{ user.getBio() }}</h6>
+                <h6>{{ user.bio }}</h6>
             </div>
         </div>
 

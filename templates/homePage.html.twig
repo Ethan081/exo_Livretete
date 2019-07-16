@@ -5,16 +5,16 @@
         {% for element in users|slice(0,2) %}
         <div class="userCard">
             <div class="cardImage">
-            {# voir pour le lien avec l image ne marche pas #}
-                <img src="asset('assets/images/borat.jpg')" alt="" class="resp userCardImage">
+                <img src={{ asset('assets/images/'~element.image) }} alt="" class="resp userCardImage">
             </div>
             <div class="userCardName">
-                <h2>{{ element.getName() }}</h2>
+                <h2>{{ element.name }}</h2>
             </div>
             <div class="userCardReknown">
-                <h3>{{ element.getReknown() }}</h3>
+                <h3>{{ element.reknown }}</h3>
 
             </div>
+
         </div>
         {% endfor %}
     </div>
