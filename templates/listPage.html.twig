@@ -6,7 +6,7 @@
         <a href="{{ path('profile_page', {'id': id }) }}">
             <div class="userCard">
                 <div class="cardImage">
-                    <img src={{ asset('assets/images/'~element.image) }} alt="" class="resp userCardImage">
+                    <img src="{{ asset('assets/images/'~element.image) }}" alt="" class="resp userCardImage">
                 </div>
                 <div class="userCardName">
                     <h2>{{ element.name}}</h2>
